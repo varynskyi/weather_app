@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #222;
+    background-image: url(https://images.unsplash.com/photo-1580193813605-a5c78b4ee01a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1965&q=80);
+}
+
+.card {
+   background: #eaeaea80;
+   max-width: 400px;
+   width: 100%;
+   margin: 1em;
+   padding: 2em;
+   border-radius: 30px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading:after {
+    visibility: visible;
+    content: "Please enter the city";
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
